@@ -1,2 +1,2 @@
 # aoc2020
- My solution for AdventOfCode 2020
+My solutions for AdventOfCode 2020
