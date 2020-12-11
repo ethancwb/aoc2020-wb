@@ -1,4 +1,4 @@
-from collections import defaultdict, deque
+from collections import defaultdict
 
 def day10a(input):
   numList = sorted(list(map(lambda x: int(x), input.split('\n'))))
@@ -17,8 +17,7 @@ def day10b(input):
 
   for i in reversed(range(n)):
     for j in range(i+1, n):
-      if numList[j] - numList[i] > 3:
-        break
+      if numList[j] - numList[i] > 3: break
       dp[i] += dp[j]
 
   res = 0
